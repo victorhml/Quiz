@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSArray * perguntas;
+    NSArray * respostas;
+    NSArray * imagens;
+}
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)mostraPer:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *resposta;
+
+- (IBAction)mostraRes:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *respImg;
 
 @end
 

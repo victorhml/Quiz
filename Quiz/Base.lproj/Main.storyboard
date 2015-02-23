@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-xI-Nq3">
+                                <rect key="frame" x="265" y="44" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tt-T4-S7L">
+                                <rect key="frame" x="241" y="95" width="119" height="30"/>
+                                <state key="normal" title="Mostrar Pergunta">
+                                    <color key="titleColor" red="0.57375399289999995" green="1" blue="0.56743401510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostraPer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msc-gg-Odm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-hg-rZm">
+                                <rect key="frame" x="286" y="154" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZe-NE-I37">
+                                <rect key="frame" x="239" y="224" width="123" height="30"/>
+                                <state key="normal" title="Mostrar Resposta">
+                                    <color key="titleColor" red="0.57375399289999995" green="1" blue="0.56743401510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostraRes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLe-ge-vSw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-n4-gnS">
+                                <rect key="frame" x="180" y="324" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39255926920000001" green="0.3989965083" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Tt-T4-S7L" firstAttribute="centerX" secondItem="yhb-hg-rZm" secondAttribute="centerX" id="CAS-CH-abR"/>
+                            <constraint firstItem="jZe-NE-I37" firstAttribute="centerX" secondItem="yhb-hg-rZm" secondAttribute="centerX" id="FS4-SB-kGY"/>
+                            <constraint firstItem="jZe-NE-I37" firstAttribute="centerX" secondItem="0ul-n4-gnS" secondAttribute="centerX" constant="0.5" id="KQq-ih-TGK"/>
+                            <constraint firstItem="0ul-n4-gnS" firstAttribute="top" secondItem="jZe-NE-I37" secondAttribute="bottom" constant="70" id="Mf8-hH-Skg"/>
+                            <constraint firstItem="PN6-xI-Nq3" firstAttribute="centerX" secondItem="7Tt-T4-S7L" secondAttribute="centerX" constant="-0.5" id="Mok-Yj-PNK"/>
+                            <constraint firstItem="yhb-hg-rZm" firstAttribute="top" secondItem="7Tt-T4-S7L" secondAttribute="bottom" constant="29" id="RdW-nh-N9E"/>
+                            <constraint firstItem="PN6-xI-Nq3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="XnX-Ls-Epq"/>
+                            <constraint firstItem="jZe-NE-I37" firstAttribute="top" secondItem="yhb-hg-rZm" secondAttribute="bottom" constant="49" id="oUh-dT-Ynu"/>
+                            <constraint firstItem="7Tt-T4-S7L" firstAttribute="top" secondItem="PN6-xI-Nq3" secondAttribute="bottom" constant="30.5" id="pk4-oe-Nn2"/>
+                            <constraint firstAttribute="centerX" secondItem="PN6-xI-Nq3" secondAttribute="centerX" id="up0-Ax-jcf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="PN6-xI-Nq3" id="Gtc-ha-xQ2"/>
+                        <outlet property="respImg" destination="0ul-n4-gnS" id="BPZ-Fr-F4t"/>
+                        <outlet property="resposta" destination="yhb-hg-rZm" id="s2G-vd-8SK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="186" y="231"/>
         </scene>
     </scenes>
 </document>
