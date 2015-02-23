@@ -16,10 +16,11 @@
 
 int cont;
 
-@synthesize label, resposta;
+@synthesize label, resposta, respImg;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    imagens = @[[UIImage imageNamed:@"unnamed.png"], [UIImage imageNamed:@"paris.png"],[UIImage imageNamed:@"nats12-300x300.png"]];
     perguntas = @[@"Quanto é 6x5?",@"Qual a capital da França?",@"Qual a raíz quadrada de 144?"];
     respostas = @[@"30", @"Paris",@"12"];
     cont = 0;
@@ -37,6 +38,7 @@ int cont;
 }
 - (IBAction)mostraRes:(id)sender {
     [resposta setText:respostas[cont]];
+    [respImg setImage:imagens[cont]];
     cont++;
     if (cont == perguntas.count) {
         cont = 0;

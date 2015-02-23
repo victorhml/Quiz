@@ -15,8 +15,8 @@
 		D4B864531A9BA1BF004AE50A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B864511A9BA1BF004AE50A /* LaunchScreen.xib */; };
 		D4B8645F1A9BA1BF004AE50A /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B8645E1A9BA1BF004AE50A /* QuizTests.m */; };
 		D4B864691A9BC484004AE50A /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B864681A9BC484004AE50A /* unnamed.png */; };
-		D4B8646B1A9BC490004AE50A /* shokunin_Eiffle_tower_Paris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4B8646A1A9BC490004AE50A /* shokunin_Eiffle_tower_Paris.jpg */; };
 		D4B8646D1A9BC49D004AE50A /* nats12-300x300.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8646C1A9BC49D004AE50A /* nats12-300x300.png */; };
+		D4B8646F1A9BCEF6004AE50A /* paris.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8646E1A9BCEF6004AE50A /* paris.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		D4B8645D1A9BA1BF004AE50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4B8645E1A9BA1BF004AE50A /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
 		D4B864681A9BC484004AE50A /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unnamed.png; path = ../../../Downloads/unnamed.png; sourceTree = "<group>"; };
-		D4B8646A1A9BC490004AE50A /* shokunin_Eiffle_tower_Paris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shokunin_Eiffle_tower_Paris.jpg; path = ../../../Downloads/shokunin_Eiffle_tower_Paris.jpg; sourceTree = "<group>"; };
 		D4B8646C1A9BC49D004AE50A /* nats12-300x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nats12-300x300.png"; path = "../../../Downloads/nats12-300x300.png"; sourceTree = "<group>"; };
+		D4B8646E1A9BCEF6004AE50A /* paris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paris.png; path = ../../../Downloads/paris.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D4B864681A9BC484004AE50A /* unnamed.png */,
-				D4B8646A1A9BC490004AE50A /* shokunin_Eiffle_tower_Paris.jpg */,
+				D4B8646E1A9BCEF6004AE50A /* paris.png */,
 				D4B8646C1A9BC49D004AE50A /* nats12-300x300.png */,
 				D4B864461A9BA1BF004AE50A /* AppDelegate.h */,
 				D4B864471A9BA1BF004AE50A /* AppDelegate.m */,
@@ -213,7 +213,7 @@
 				D4B864691A9BC484004AE50A /* unnamed.png in Resources */,
 				D4B8646D1A9BC49D004AE50A /* nats12-300x300.png in Resources */,
 				D4B864501A9BA1BF004AE50A /* Images.xcassets in Resources */,
-				D4B8646B1A9BC490004AE50A /* shokunin_Eiffle_tower_Paris.jpg in Resources */,
+				D4B8646F1A9BCEF6004AE50A /* paris.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
